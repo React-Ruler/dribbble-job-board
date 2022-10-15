@@ -29,26 +29,25 @@ body {
   font-weight: 400 !important;
   color: #6e6d7a !important;
   .btn {
-    display: inline-block;
-    position: relative;
-    box-sizing: border-box;
-    height: 40px;
-    padding: 10px 16px;
-    transition: color 200ms ease;
-    border: none;
-    border-radius: 8px;
-    outline: none;
-    background: $btn-color-primary;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-
-    appearance: none;
-    font-family: $poppins;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 20px;
-    color: #fff;
+    display: inline-block !important;
+    position: relative !important;
+    box-sizing: border-box !important;
+    height: 40px !important;
+    padding: 10px 16px !important;
+    transition: color 200ms ease !important;
+    border: none !important;
+    border-radius: 8px !important;
+    outline: none !important;
+    background: $btn-color-primary !important;
+    text-align: center !important;
+    text-decoration: none !important;
+    cursor: pointe !important;
+    appearance: none !important;
+    font-family: $poppins !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    line-height: 20px !important;
+    color: #fff !important;
   }
 }
 
@@ -114,7 +113,7 @@ p.subtitle {
   grid-template-columns: repeat(12, 1fr);
   img {
     display: block;
-     border-radius: 20px;
+    border-radius: 20px;
   }
 }
 
@@ -129,8 +128,6 @@ p.subtitle {
   padding-top: 20%; // slightly arbitrary, keeps proportion once resized
   z-index: 1; // tells the browser to make this image on top
 }
-
-
 
 // Bulma Imports
 
