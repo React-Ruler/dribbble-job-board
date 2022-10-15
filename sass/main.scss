@@ -1,0 +1,144 @@
+// Typography
+$poppins: "Poppins", sans-serif;
+
+// Colors
+$typeface-color-bold: #0d0c22;
+$typeface-color-light: #3d3d4e;
+$btn-color-primary: #ea4c89;
+$btn-color-secondary: #dbdbde;
+
+html {
+  font-family: $poppins !important;
+  scroll-behavior: smooth !important;
+}
+
+body {
+  font-family: $poppins !important;
+}
+
+.navbar-start .navbar-item {
+  font-size: 14px !important;
+  line-height: 20px !important;
+  font-weight: 500 !important;
+  color: $typeface-color-bold !important;
+}
+
+.navbar-end .navbar-item {
+  font-size: 16px !important;
+  line-height: 28px !important;
+  font-weight: 400 !important;
+  color: #6e6d7a !important;
+  .btn {
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    height: 40px;
+    padding: 10px 16px;
+    transition: color 200ms ease;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    background: $btn-color-primary;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+
+    appearance: none;
+    font-family: $poppins;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #fff;
+  }
+}
+
+h1.title {
+  font-size: 32px !important;
+  font-weight: 700 !important;
+  line-height: 38px !important;
+  color: $typeface-color-bold !important;
+}
+
+p.subtitle {
+  font-size: 20px !important;
+  font-weight: 400 !important;
+  line-height: 32px !important;
+  color: $typeface-color-light !important;
+  margin-top: 16px !important;
+}
+
+.btn-primary {
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  line-height: 20px !important;
+  height: 50px !important;
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
+  color: #fff !important;
+  background: $btn-color-primary !important;
+  transition: color 200ms ease !important;
+  border: none !important;
+  border-radius: 8px !important;
+  outline: none !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  cursor: pointer !important;
+  display: inline-block !important;
+}
+
+.btn-secondary {
+  display: inline-block !important;
+  box-sizing: border-box !important;
+  height: 50px !important;
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
+  transition: color 200ms ease !important;
+  border: none !important;
+  border-radius: 8px !important;
+  outline: none !important;
+  background: $btn-color-secondary !important;
+  color: $typeface-color-bold !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  cursor: pointer !important;
+  appearance: none !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  line-height: 20px !important;
+}
+
+// Relevant styles
+.image-stack {
+  display: grid;
+  position: relative; // imperative for the overlapping to work
+  grid-template-columns: repeat(12, 1fr);
+  img {
+    display: block;
+     border-radius: 20px;
+  }
+}
+
+.image-stack__item--bottom {
+  grid-column: 4 / -1;
+  grid-row: 1;
+}
+
+.image-stack__item--top {
+  grid-row: 1;
+  grid-column: 1 / span 8;
+  padding-top: 20%; // slightly arbitrary, keeps proportion once resized
+  z-index: 1; // tells the browser to make this image on top
+}
+
+
+
+// Bulma Imports
+
+@import "../node_modules/bulma/sass/utilities/_all.sass";
+@import "../node_modules/bulma/sass/base/_all.sass";
+@import "../node_modules/bulma/sass/elements/_all.sass";
+@import "../node_modules/bulma/sass/form/_all.sass";
+@import "../node_modules/bulma/sass/components/_all.sass";
+@import "../node_modules/bulma/sass/grid/_all.sass";
+@import "../node_modules/bulma/sass/helpers/_all.sass";
+@import "../node_modules/bulma/sass/layout/_all.sass";
